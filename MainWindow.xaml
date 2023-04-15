@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FilledRegionsForm"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Filled Regions Tool" Height="400" Width="300">
     <Grid>
+        <Border Padding="10
+                ">
+            <StackPanel Margin="0,0,0,-2">
+                <TextBlock Margin="0 0 0 10"  Text="Select Category"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Family"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Type"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Filled Region Group"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Filled Region property to read from"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Space property to write into"/>
+                <ComboBox Padding="2"/>
+                <TextBlock Margin="0 0 0 10"  Text="Select Family Instance property to write into"/>
+                <ComboBox Padding="2"/>
+                <Grid Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
 
+                    <Button x:Name="ApplyButton" Click="OnClickApplyButton" Grid.Column="0" Margin="0 0 10 0">
+                        Apply
+                    </Button>
+                    <Button x:Name="ResetButton" Click="OnClickResetButton" Grid.Column="1" Margin="0 0 10 0">
+                        Reset
+                    </Button>
+                    <Button x:Name="OkayButton" Click="OnClickOkayButton" Grid.Column="2" Margin="0 0 10 0">
+                        OK
+                    </Button>
+                    <Button x:Name="CancelButton" Click="OnClickCancelButton" Grid.Column="3">
+                        Cancel
+                    </Button>
+
+                </Grid>
+
+
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
